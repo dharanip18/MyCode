@@ -2,8 +2,9 @@
   "name": "mycode",
   "version": "1.0.0",
   "description": "My First React App",
-
   "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
     "test": "jest"
   },
   "repository": {
