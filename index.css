@@ -1,0 +1,28 @@
+*{
+    font-family: sans-serif;
+    margin:0;
+    padding:0;
+}
+.header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}   
+.header .logo{
+    width: 250px;
+    height: 100px;
+    object-fit: cover;
+    object-position: bottom;
+}
+.nav-list ul{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-list ul>li{
+    list-style: none;
+    padding:0 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color:brown;
+}

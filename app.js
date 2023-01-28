@@ -51,27 +51,58 @@ import ReactDOM from "react-dom/client";
 // );
 
 //React Element
-const heading = (
-  <h1 id="title" key="h1">
-    This is React Element
-  </h1>
-);
+// const heading = (
+//   <h1 id="title" key="h1">
+//     This is React Element
+//   </h1>
+// );
 
+const Title = () => (
+  <a href="#">
+    <img
+      className="logo"
+      src="https://th.bing.com/th/id/OIP._b6q0KzTrD7VrwPuS-gojgAAAA?pid=ImgDet&rs=1"
+      alt="Logo"
+    />
+  </a>
+);
 // Functional Component
-const HeaderComponent = () => {
+const Header = () => {
   return (
-    <div>
-      {heading}
-      <h1>This is functional component</h1>
-      <h2>This is h2 tag</h2>
+    <div className="header">
+      <Title />
+      <div className="nav-list">
+        <ul>
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
     </div>
   );
 };
 
+const Body = () => {
+  return <h3>Body</h3>;
+};
+
+const Footer = () => {
+  return <h3>Footer</h3>;
+};
+
+const AppLayout = () => {
+  return (
+    <>
+      <Header />
+      <Body />
+      <Footer />
+    </>
+  );
+};
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 // passing react element inside the root
 // root.render(heading);
 
 //render Component
-root.render(<HeaderComponent />);
+root.render(<AppLayout />);
